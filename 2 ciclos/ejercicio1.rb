@@ -1,5 +1,6 @@
 # En el siguiente código reemplaza la instrucción 'for' por 'times'
-
-for i in 1..10 do
+i = 1
+10.times do
   puts i
+  i += 1
 end
