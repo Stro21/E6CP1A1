@@ -11,3 +11,9 @@
 </table>
 
 =end
+
+puts "<table>\n  <tbody>\n      <tr>\n"
+for i in 1..3 do
+  puts "        <td> " + i.to_s + " </td>\n"
+end
+puts "      </tr>\n  </tbody>\n</table>\n"
