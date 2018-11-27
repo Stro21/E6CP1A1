@@ -3,5 +3,13 @@
 # que se ingrese un 0 (cero).
 # Ingrese un número (0 para salir): _
 
-#Debido a que no se que se refieren con tabla de multiplicar, supongo que seria
-#las primeras 10 multiplicaciones.
+puts 'Ingrese un numero para ver su tabla de multiplicaciones'
+num = gets.chomp.to_i
+while num > 0
+  for i in 1..10 do
+    multi = num * i
+    puts num.to_s + ' x ' + i.to_s + ' = ' + multi.to_s
+  end
+  puts 'Ingrese un numero para ver su tabla de multiplicaciones'
+  num = gets.chomp.to_i
+end
