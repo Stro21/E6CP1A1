@@ -9,10 +9,12 @@
 # </ul>
 
 a = 5
-b = ''
+b = "<ul>\n"
 
 a.times do
-  b = "<li> hola </li>\n"
+  b = b + "<li> hola </li>\n"
 end
+
+b = b + "</ul>\n"
 
 puts b
